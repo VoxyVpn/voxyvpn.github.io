@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoxyVpn - Secure & Fast VPN for Android</title>
+    <!-- Materialize CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .nav-wrapper {
+            background: linear-gradient(90deg, #1a1a1a, #2c2c2c);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .brand-logo {
+            font-weight: 700;
+            font-size: 2rem;
+            padding-left: 20px;
+        }
+        .hero-section {
+            background: url('https://via.placeholder.com/1500x600/1a1a1a/333333?text=VoxyVpn') no-repeat center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-title {
+            font-weight: 600;
+            color: #ffffff;
+        }
+        .btn-large {
+            background-color: #0288d1;
+            border-radius: 8px;
+            text-transform: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-large:hover {
+            background-color: #0277bd;
+        }
+        .donate-section {
+            margin: 40px 0;
+        }
+        .donate-address {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            word-break: break-all;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            color: #4fc3f7;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            .hero-section {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">VoxyVpn</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#donate">Donate</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Secure Your Connection with VoxyVpn</h1>
+            <p>Experience blazing-fast and secure VPN services on your Android device. Protect your privacy and access global content effortlessly.</p>
+            <a href="#downloads" class="btn-large waves-effect waves-light">Download Now</a>
+        </div>
+    </div>
+
+    <!-- Download Section -->
+    <div class="container" id="downloads">
+        <h4 class="center-align">Download VoxyVpn</h4>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">ARM64-v8a</span>
+                        <p>Optimized for modern 64-bit Android devices for superior performance.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="path/to/voxyvpn_arm64-v8a.apk" class="btn-large waves-effect waves-light" download>
+                            <i class="material-icons left">file_download</i> Download ARM64-v8a
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">ARMv7 (armeabi-v7a)</span>
+                        <p>Compatible with older 32-bit Android devices for maximum compatibility.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="path/to/voxyvpn_armeabi-v7a.apk" class="btn-large waves-effect waves-light" download>
+                            <i class="material-icons left">file_download</i> Download ARMv7
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Donate Section -->
+    <div class="container donate-section" id="donate">
+        <h4 class="center-align">Support VoxyVpn</h4>
+        <p class="center-align">Your donations help us keep VoxyVpn fast, secure, and free. Contribute using TRON or TON.</p>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">TRON (TRX) Donation</span>
+                        <div class="donate-address">Your_TRON_Address_Here</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">TON Donation</span>
+                        <div class="donate-address">Your_TON_Address_Here</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 VoxyVpn. All rights reserved.</p>
+    </footer>
+
+    <!-- Materialize JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Materialize components
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+        });
+    </script>
+</body>
+</html>
